@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+div#outer-cont{
+    position: relative;
+    width: 100%;
+    background-color: rgb(99, 150, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#carousel{
+    position: relative;
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #26213d;
+    overflow: hidden;
+}
+.swipper-container{
+    width: 100%;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    box-shadow: 15px 15px 15px 1px rgba(0, 0, 0, 0.6);
+    filter: blur(3px);
+    background: #d1ebff;
+}
+.swiper-slide-active{
+    filter: blur(0px);
+}
+.testimonialBox{
+    position: relative;
+    width: 100%;
+    /* padding: 40px; */
+    background-color: #fff;
+}
+.swiper-container .swiper-slide-shadow-left,
+  .swiper-container .swiper-slide-shadow-right{
+      background-image: none;
+  }
+  /* ---------------by me */
+.content{
+    display: flex;
+}
+ img{
+    width: 100%;
+}
+#scroll-container-section{
+    width: 50%;
+}
+.swiper-pagination{
+    /* background-color: rgb(151, 58, 58); */
+    position: absolute;
+    top: 110%;
+
+}
+.swiper-slide, .testimonialBox, .content, .carousel-img{
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .swiper-slide, .testimonialBox, .content, .carousel-img{
+        border-radius: 0px;
+    }
+    #scroll-container-section{
+        width: 75%;
+    }
+    .swiper-slide{
+        filter: blur(0px);
+    }
+}
